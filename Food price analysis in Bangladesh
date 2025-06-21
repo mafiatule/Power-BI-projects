@@ -1,0 +1,74 @@
+
+# Food Price Analysis in Bangladesh
+Introduction:
+
+The information used in this analysis are derived from the World Food Programme (WFP), comprising food price information collected in various divisions in Bangladesh for a few years (1998–2024). It includes significant variables such as type of commodity, market location, administrative region, types of prices (wholesale/retail), and pattern of time. This work attempts to analyze long-term trends in prices of staple food items like rice, wheat, lentils, and oil, helping to identify market imbalances, regional gaps, and suggest regulatory areas of focus. Bangladesh being susceptible to climatic shocks, economic upheavals, and global events like the COVID-19 pandemic, this work serves as a decision-support tool for government agencies, NGOs, and policy makers.
+
+Data Cleaning and Preparation:
+
+The raw dataset required some preprocessing procedures to render it analytically clean. Certain initial problems were:
+
+•	Column header Issues: There were two columns as heading. In power query, the most meaningful one is kept as header, where another one was removed.
+
+•	Data type: Few columns were not identified as proper data type. For example, Date was not as a date format, instead it was in text format. Also the columns where we have price was also changed into decimal type of data from text data.
+
+•	Categorical Consistency: It was found different types of rice category added. Those all categories were replaced as single “Rice” type category so that we have less legend to form graph and also to do better comparison among categories.
+
+•	Currency Discrepancies: Though the dataset had prices in local currency as well as USD, the analysis was performed for local currency to symbolize domestic market trends.
+
+Key Insights from Analysis:
+
+Price variation by items:
+
+The chart "Price Variation by Items" shows the highest, lowest, and average retail prices (in Bangladeshi Taka) for five staple foods in Bangladesh: palm oil, lentils (masur), wheat flour, rice, and wheat. Of them, palm oil exhibits the maximum price fluctuation with the price changing from a minimum of ৳34 to a maximum of ৳680 and average price of ৳111. Lentils also exhibit big fluctuation, from ৳11 to ৳150 with average ৳92, showing supply chain breakdown most likely worsened from time to time. Wheat flour and rice have moderate variation (wheat flour: ৳19–75; rice: ৳14–68), and wheat has the smallest spread with a price between ৳17 and ৳38 with a mean of ৳28, showing relatively stable supply. The entire dataset has a highest observed price of ৳4,925, a lowest of ৳11, and an average price of all commodities as ৳204, showing extreme variation in pricing differences in staple food commodities among markets.
+
+Price variation by items across divisions:
+
+The price chart titled "Price Variation by Items Across Division" presents comparative study of five essential commodities—lentil (masur), palm oil, rice, wheat, and wheat flour—and their average prices across all eight administrative divisions in Bangladesh. The most expensive among all the divisions is palm oil, with its highest being ৳122 in Mymensingh and lowest being well above ৳107 for all others, reflecting its robust import reliance and price volatility. 
+
+Despite high production levels, Mymensingh is plagued by severe marketing and distribution inefficiencies. Studies on fish markets in the area reveal that middlemen incur high marketing costs, which are passed on to consumers, leading to increased retail prices.
+
+Lentil prices are second highest with Mymensingh at ৳106 again, suggesting regional patterns of consumption or transportation costs influence prices. Rice prices are moderately dispersed, ranging from ৳87 in Rajshahi to ৳97 in Rangpur. Wheat and wheat flour show minimal variation, with the lowest in Dhaka (৳28 and ৳42, respectively), presumably because of ease of access to distribution centers.
+
+Price variation trends:
+
+The line graphs "Price Variation Over the Years (Retail)" and "Price Variation Over Past Decades (Retail)" provide a representation of the movement of retail prices for Bangladesh's three largest food groups—cereals and tubers, oil and fats, and pulses and nuts—over the years from the early 2000s to 2024. Both the representations indicate that oil and fats have experienced the most price increase, from 2020 onwards. It could be due to onset of the COVID-19 pandemic and the resulting global supply chain disruptions. Fats and oils prices skyrocketed between 2020 and 2022, then marginally increased in 2023–2024.
+
+Pulses and nuts also behave in a similar manner, with prices slowly escalating after 2019, suggesting increased demand and domestic supply restrictions. Similarly, cereals and tubers follow comparatively more stable growth, corresponding to a controlled market due to local production's resilience and governmental price control where applicable in staple crops like wheat and rice. The concurrent upward movement of the three food types since 2020 adds increased force to the macroeconomic burden imposed by the pandemic, inflation, and added logistic expenses causing severe damage to consumer affordability in food in Bangladesh. These trends require increased food market resilience planning, especially for protein and oil-based foods.
+
+As we do not have wholesale data for all divisions, we prefer to keep it separate from retail analysis. Because it may confuse the readers as well as analysis.
+
+The line chart "Price Fluctuation Over the Years (Wholesale)" traces wholesale price movements of cereals and tubers in Bangladesh from the late 1990s through 2024. The graph depicts a relatively stable phase of pricing through 1998 to 2004, with an evident upward trend beginning around 2005. The mid-2000s spike shows with a global surge in food prices brought on by elevated oil prices, export bans by large grain producers.
+
+Wholesale prices experienced moderate variations between 2008 and 2015. The steady upward trend toward 2024 represents underlying cost increases in production and distribution, despite relatively stable domestic yields.
+
+Pricing by type of rice:
+
+The "Price by Type of Rice" donut chart show a comparative image of the average price of four common types of rice in Bangladesh. Rice (medium grain) is the most expensive of them with an average price of ৳1,764.  Then comes coarse rice (Guti Sharna) at ৳1,598, and coarse rice (BR-8/11, Guti Sharna hybrids) at ৳1,519, indicating a slight discount market valuation for the coarser varieties.
+
+
+Recommendations:
+
+Despite the improvement in Bangladesh's agricultural self-sufficiency, especially rice and staple foods, the analysis of food prices indicates that market uncertainty continues, regional inequalities exist, and post-pandemic inflationary stress erodes the accessibility of food, particularly for vulnerable groups. The following recommendations are put forward:
+
+•	Improve Food Transport and Distribution Infrastructure
+
+Surplus production regions such as Mymensingh remain burdened with high prices due to poor market connectivity, godowning, and flood-prone transport corridors. Cold storage, road development, and subsidized transport of necessities can reduce the prices and enable competitive prices in surplus as well as deficit regions.
+
+•	Control Oil and Pulses
+
+Palm oil and lentils are the most price-volatile commodities, especially after 2020. Organization of public stockpiles or buffer stocks for oil and pulses should come forward to control this.
+
+•	Post-COVID Price Recovery Planning
+
+The pandemic has produced a evident turning point in food prices (2020–2022), particularly for oils and fats. While market recovery remains, macro-fiscal policy levers (tariff facilitation, waivers on VAT, subsidies on input) need to be adjusted downward in order to curb cascading cost effects on key food commodities.
+
+•	Enhance Consumer Availability of Market Price Information
+
+Institute mobile-based price alert systems for producers and consumers in order to enable intelligent purchasing and negotiation, especially in rural or remote areas. 
+
+•	Targeted Subsidy and Safety Net Programs in High-Cost Areas
+
+Regions such as Mymensingh, Chittagong, and Sylhet, which consistently record higher commodity prices, need to be prioritized for increased coverage.
+
+	
